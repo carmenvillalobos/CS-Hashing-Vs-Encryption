@@ -3,6 +3,8 @@ const y = 5
 const z = 8
 const w = 11
 
+const simpleEncryption = (data) => ((data + x)/y) + ((data - z)/w)
+
 const simpleHash= (Data) => (Data % x) * 1000 + (Data % y) * 100 + (Data % z) * 10 + (Data % w)
 
 console.log(simpleHash(7501))
